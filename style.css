@@ -1,0 +1,158 @@
+/* Basic page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #273469;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+/* Main layout */
+.container {
+    display: flex;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    align-items: flex-start;
+}
+
+/* Form and preview cards */
+.form-section,
+.preview-section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-section {
+    flex: 1;
+}
+
+.preview-section {
+    flex: 1;
+}
+
+h2 {
+    color: #273469;
+    margin-bottom: 20px;
+}
+
+/* Form elements */
+label {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+textarea {
+    min-height: 75px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #6478db;
+    border-color: #6478db;
+}
+
+/* Button */
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #273469;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3d4c91;
+}
+
+/* Resume preview */
+.resume {
+    border: 1px solid #ddd;
+    padding: 25px;
+    background-color: #fff;
+    min-height: 500px;
+}
+
+.resume h1 {
+    color: #273469;
+    font-size: 28px;
+}
+
+.resume .contact {
+    color: #555;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.resume hr {
+    border: none;
+    border-top: 2px solid #273469;
+    margin: 15px 0;
+}
+
+.resume h3 {
+    color: #273469;
+    margin-top: 18px;
+    margin-bottom: 5px;
+}
+
+.resume p {
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+/* Mobile-friendly layout */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .form-section,
+    .preview-section {
+        width: 100%;
+    }
+}
